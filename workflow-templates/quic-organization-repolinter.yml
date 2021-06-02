@@ -13,15 +13,15 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Verify repolinter config file is present
-        id: check_local_repolint_exists
+        id: check_files
         uses: andstor/file-existence-action@v1
         with:
           files: "repolint.json"
       - name: Run Repolinter with local repolint.json
-        if: steps.check_local_repolint_exists == 'true'
+        if: steps.check_files.outputs.files_exists == 'true'
         uses: newrelic/repolinter-action@v1
       - name: Run Repolinter with default ruleset
-        if: steps.check_local_repolint_exists == 'false'
+        if: steps.check_files.outputs.files_exists == 'false'
         uses: newrelic/repolinter-action@v1
         with:
           config_url: "https://github.com/quic/.github/repolint.json"
