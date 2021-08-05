@@ -33,7 +33,7 @@
         }
     },
     "contributing-file-exists": {
-        "level": "error",
+        "level": warning,
         "rule": {
             "type": "file-existence",
             "options": {
@@ -45,7 +45,7 @@
         }
     },
     "code-of-conduct-file-exists": {
-        "level": "error",
+        "level": warning,
         "rule": {
             "type": "file-existence",
             "options": {
@@ -99,7 +99,7 @@
         }
     },
     "test-directory-exists": {
-        "level": "error",
+        "level": warning,
         "rule": {
             "type": "directory-existence",
             "options": {
@@ -155,7 +155,7 @@
                         "types/*"
                     ]
                  },
-                "lineCount": 5,
+                "lineCount": 40,
                 "patterns": [
                     "Copyright.*Qualcomm Innovation Center, Inc",
                     "SPDX-License-Identifier"
@@ -189,7 +189,7 @@
         }
     },
     "javascript-package-metadata-exists": {
-        "level": "error",
+        "level": warning,
         "where": [
             "language=javascript"
         ],
@@ -233,7 +233,7 @@
         }
     },
     "python-package-metadata-exists": {
-        "level": "error",
+        "level": warning,
         "where": [
             "language=python"
         ],
@@ -248,7 +248,7 @@
         }
     },
     "objective-c-package-metadata-exists": {
-        "level": "error",
+        "level": warning,
         "where": [
             "language=objective-c"
         ],
