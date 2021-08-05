@@ -33,7 +33,7 @@
         }
     },
     "contributing-file-exists": {
-        "level": warning,
+        "level": "warning",
         "rule": {
             "type": "file-existence",
             "options": {
@@ -45,7 +45,7 @@
         }
     },
     "code-of-conduct-file-exists": {
-        "level": warning,
+        "level": "warning",
         "rule": {
             "type": "file-existence",
             "options": {
@@ -84,7 +84,7 @@
         }
     },
     "binaries-not-present": {
-        "level": "error",
+        "level": "warning",
         "rule": {
             "type": "file-type-exclusion",
             "options": {
@@ -99,7 +99,7 @@
         }
     },
     "test-directory-exists": {
-        "level": warning,
+        "level": "warning",
         "rule": {
             "type": "directory-existence",
             "options": {
@@ -189,7 +189,7 @@
         }
     },
     "javascript-package-metadata-exists": {
-        "level": warning,
+        "level": "warning",
         "where": [
             "language=javascript"
         ],
@@ -203,7 +203,7 @@
         }
     },
     "ruby-package-metadata-exists": {
-        "level": "error",
+        "level": "warning",
         "where": [
             "language=ruby"
         ],
@@ -217,7 +217,7 @@
         }
     },
     "java-package-metadata-exists": {
-        "level": "error",
+        "level": "warning",
         "where": [
             "language=java"
         ],
@@ -233,7 +233,7 @@
         }
     },
     "python-package-metadata-exists": {
-        "level": warning,
+        "level": "warning",
         "where": [
             "language=python"
         ],
@@ -248,7 +248,7 @@
         }
     },
     "objective-c-package-metadata-exists": {
-        "level": warning,
+        "level": "warning",
         "where": [
             "language=objective-c"
         ],
@@ -264,7 +264,7 @@
         }
     },
     "swift-package-metadata-exists": {
-        "level": "error",
+        "level": "warning",
         "where": [
             "language=swift"
         ],
@@ -278,7 +278,7 @@
         }
     },
     "erlang-package-metadata-exists": {
-        "level": "error",
+        "level": "warning",
         "where": [
             "language=erlang"
         ],
@@ -292,7 +292,7 @@
         }
     },
     "elixir-package-metadata-exists": {
-        "level": "error",
+        "level": "warning",
         "where": [
             "language=elixir"
         ],
