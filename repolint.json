@@ -152,8 +152,8 @@
               "babel.config.js",
               "build\/",
               "jest.config.js",
-              "node_modules/*",
-              "types/*"
+              "node_modules\/",
+              "types\/"
             ]
           },
           "lineCount": 40,
