@@ -1,7 +1,5 @@
-<p style="background-color: #0C2544; padding-top: 1em;">
-  <img src="./quic_logo.png" />
-</p>
-
+  ![Qualcomm Innovation Center logo](https://raw.githubusercontent.com/quic/.github/main/profile/quic_logo.png)
+  
 QuIC is focused on technical innovations to mobile open-source software that leverages the unique capabilities of today's mobile devices, with a particular eye on optimizing platforms and applications which run on them via tight hardware integration.
 
 ## Sound Interesting?
