@@ -145,7 +145,8 @@
             "**/*.cpp",
             "**/*.h",
             "**/*.ts",
-            "**/*.sh"
+            "**/*.sh",
+            "**/*.rs"
           ],
           "skip-paths-matching": {
             "patterns": [
