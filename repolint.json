@@ -249,6 +249,21 @@
         }
       }
     },
+    "rust-package-metadata-exists": {
+      "level": "error",
+      "where": [
+         "language=rust"
+      ],
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            "cargo.toml",
+            "cargo.lock"
+          ]
+        }
+      }
+    },
     "objective-c-package-metadata-exists": {
       "level": "warning",
       "where": [
