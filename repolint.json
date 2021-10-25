@@ -258,8 +258,8 @@
         "type": "file-existence",
         "options": {
           "globsAny": [
-            "cargo.toml",
-            "cargo.lock"
+            "Cargo.toml",
+            "Cargo.lock"
           ]
         }
       }
