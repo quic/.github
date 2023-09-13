@@ -14,7 +14,8 @@
         "options": {
           "globsAny": [
             "LICENSE*",
-            "COPYING*"
+            "COPYING*",
+            "NOTICE*"
           ],
           "nocase": true
         }
