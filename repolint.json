@@ -148,7 +148,8 @@
             "**/*.ts",
             "**/*.sh",
             "**/*.rs",
-            "**/*.java"
+            "**/*.java",
+            "**/*.go"
           ],
           "skip-paths-matching": {
             "patterns": [
