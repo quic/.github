@@ -11,8 +11,8 @@ QuIC repos should enable the Repolinter GitHub Action upon creation. This action
 1. Navigate to the new repo
 1. Click on Actions
 1. If you have existing actions in the repo, click "New workflow", else skip to next step
-1. Scroll to "Workflows created by Qualcomm Innovation Center" and click "Set up this workflow" under "QuIC Organization Repolinter Workflow"
-1. Click "Start commit" and then "Commit new file" after ensuring your QuIC email is listed under "Choose which email address to associate with this commit"
+1. Locate the "By Qualcomm Innovation Center" section and click "Configure" under "QuIC Organization Repolinter Workflow"
+1. Click "Commit changes...", select "Commit directly to the main branch" (or feel free to create a new branch and start a PR), ensure your QuIC email is selected under "Commit Email", and then click "Sign off and commit changes"
 1. This will create a GitHub Action config file in your repo under the path `.github/workflows/quic-organization-repolinter.yml`
 1. Adjust it as needed, e.g. the Repolinter action is configured to run on Push and Pull Requests into the main/master branch, but you may want to further adjust when it runs.
 
