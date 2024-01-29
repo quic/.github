@@ -149,7 +149,8 @@
             "**/*.sh",
             "**/*.rs",
             "**/*.java",
-            "**/*.go"
+            "**/*.go",
+            "**/*.bbclass"
           ],
           "skip-paths-matching": {
             "patterns": [
@@ -166,6 +167,58 @@
             "SPDX-License-Identifier"
           ],
           "flags": "i"
+        }
+      }
+    },
+    "source-license-headers-exist": {
+      "level": "error",
+      "rule": {
+        "type": "file-starts-with",
+        "options": {
+          "globsAll": [
+            "**/*.py",
+            "**/*.js",
+            "**/*.c",
+            "**/*.cc",
+            "**/*.cpp",
+            "**/*.h",
+            "**/*.ts",
+            "**/*.sh",
+            "**/*.rs",
+            "**/*.java",
+            "**/*.go",
+            "**/*.bbclass"
+          ],
+          "skip-paths-matching": {
+            "patterns": [
+              "babel.config.js",
+              "build\/",
+              "jest.config.js",
+              "node_modules\/",
+              "types\/"
+            ]
+          },
+          "lineCount": 40,
+          "patterns": [
+            "Copyright.*Qualcomm Innovation Center, Inc|©.*Qualcomm Innovation Center, Inc",
+            "SPDX-License-Identifier"
+          ],
+          "flags": "i"
+        }
+      }
+    },
+    "bb-file-license-exist": {
+      "level": "error",
+      "rule": {
+        "type": "file-starts-with",
+        "options": {
+          "globsAll": [
+            "**/*.bb"
+          ],
+          "lineCount": 40,
+          "patterns": [
+            "LICENSE ="
+          ]
         }
       }
     },
