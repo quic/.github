@@ -161,7 +161,7 @@
               "types\/"
             ]
           },
-          "lineCount": 40,
+          "lineCount": 60,
           "patterns": [
             "Copyright.*Qualcomm Innovation Center, Inc|©.*Qualcomm Innovation Center, Inc",
             "SPDX-License-Identifier"
