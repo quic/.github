@@ -150,6 +150,7 @@
             "**/*.rs",
             "**/*.java",
             "**/*.go",
+            "**/*.bbclass",
             "**/*.S"
           ],
           "skip-paths-matching": {
@@ -167,6 +168,21 @@
             "SPDX-License-Identifier"
           ],
           "flags": "i"
+        }
+      }
+    },
+    "bb-file-license-exist": {
+      "level": "error",
+      "rule": {
+        "type": "file-starts-with",
+        "options": {
+          "globsAll": [
+            "**/*.bb"
+          ],
+          "lineCount": 40,
+          "patterns": [
+            "LICENSE ="
+          ]
         }
       }
     },
