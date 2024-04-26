@@ -79,7 +79,7 @@
           "globsAll": [
             "README*"
           ],
-          "content": "license",
+          "content": "license|notice",
           "flags": "i"
         }
       }
