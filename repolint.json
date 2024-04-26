@@ -150,7 +150,8 @@
             "**/*.rs",
             "**/*.java",
             "**/*.go",
-            "**/*.bbclass"
+            "**/*.bbclass",
+            "**/*.S"
           ],
           "skip-paths-matching": {
             "patterns": [
@@ -161,9 +162,9 @@
               "types\/"
             ]
           },
-          "lineCount": 40,
+          "lineCount": 60,
           "patterns": [
-            "Copyright.*Qualcomm Innovation Center, Inc|©.*Qualcomm Innovation Center, Inc",
+            "(Copyright|©).*Qualcomm Innovation Center, Inc|Copyright (\\(c\\)|©) 20(1[2-9]|2[0-2])(-20(1[2-9]|2[0-2]))?, The Linux Foundation",
             "SPDX-License-Identifier"
           ],
           "flags": "i"
