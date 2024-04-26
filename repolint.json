@@ -179,7 +179,7 @@
           "globsAll": [
             "**/*.bb"
           ],
-          "succeed-on-non-exist": true,
+          "succeed-on-non-existent": true,
           "lineCount": 40,
           "patterns": [
             "LICENSE ="
