@@ -280,8 +280,8 @@
         "type": "file-existence",
         "options": {
           "globsAny": [
-            "Cargo.toml",
-            "Cargo.lock"
+            "**/Cargo.toml",
+            "**/Cargo.lock"
           ]
         }
       }
