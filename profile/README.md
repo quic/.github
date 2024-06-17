@@ -1,7 +1,10 @@
   ![Qualcomm Innovation Center logo](https://raw.githubusercontent.com/quic/.github/main/profile/quic_logo.png)
   
-QuIC is focused on technical innovations to mobile open-source software that leverages the unique capabilities of today's mobile devices, with a particular eye on optimizing platforms and applications which run on them via tight hardware integration.
+Welcome to **Qualcomm Innovation Center, Inc. (QuIC)**! QuIC is a wholly owned subsidiary of **Qualcomm Technologies, Inc.**, focused on enabling and optimizing open-source software for use with Qualcomm ® technology. 
 
-## Sound Interesting?
+Head over to Qualcomm Technologies GitHub page to learn more: [github.com/Qualcomm](https://github.com/qualcomm)
 
-Check out our web site at <a href="http://quic.github.io">quic.github.io</a>. Considering a career at QuIC? Start <a href="https://www.qualcomm.com/company/careers">here</a>.
+Explore our Systems on Chip, hardware and software development kits and tools at our website: [qualcomm.com/developer](https://www.qualcomm.com/developer)
+
+**Got technical questions?** Join our developer community at Discord: [discord.gg/qualcommdevelopernetwork](https://discord.gg/qualcommdevelopernetwork)
+
