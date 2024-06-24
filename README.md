@@ -20,4 +20,67 @@ QuIC repos should enable the Repolinter GitHub Action upon creation. This action
 
 When the GitHub Action is run, it first checks your QuIC repo for a local `repolint.json` file at the root directory. If it doesn't find one it'll use the default QuIC Repolinter ruleset, which is located here https://github.com/quic/.github/blob/main/repolint.json
 
-To customize the default QuIC repolinter ruleset (e.g. to add some language specific file extensions for the license check), copy the `repolint.json` file (from https://github.com/quic/.github/blob/main/repolint.json) and place it at the root of your QuIC repo. Now you can edit and tweak it as applicable.
+To customize the default QuIC repolinter ruleset (e.g. to add some language specific file extensions for the license check), you can extend the default ruleset and override specific rules. 
+
+For example, if we wanted to exclude the copyright/license check for a directory e.g. `/test-data` from Repolinter:
+
+1. Create the file `repolint.json` at the root of your project
+1. "Extend" the QuIC repolint.json file
+
+```json
+{
+  "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+  "rules": {}
+}
+```
+
+3. Copy the rule block you need to adjust from `https://raw.githubusercontent.com/quic/.github/main/repolint.json`. E.g. in this case we want to exclude `/test-data` from the license header check. So let's copy the json block `source-license-headers-exist` and paste it into the `rules` section of the local `repolint.json` we extended
+1. Now lets add the `test-data` directory to the list of patterns to skip/exclude from being checked
+
+```json
+{
+  "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+  "rules": {
+    "source-license-headers-exist": {
+      "level": "error",
+      "rule": {
+        "type": "file-starts-with",
+        "options": {
+          "globsAll": [
+            "**/*.py",
+            "**/*.js",
+            "**/*.c",
+            "**/*.cc",
+            "**/*.cpp",
+            "**/*.h",
+            "**/*.ts",
+            "**/*.sh",
+            "**/*.rs",
+            "**/*.java",
+            "**/*.go",
+            "**/*.bbclass",
+            "**/*.S"
+          ],
+          "skip-paths-matching": {
+            "patterns": [
+              "babel.config.js",
+              "build\/",
+              "jest.config.js",
+              "node_modules\/",
+              "types\/",
+              "uthash.h",
+              "test-data\/"
+            ]
+          },
+          "lineCount": 60,
+          "patterns": [
+            "(Copyright|©).*Qualcomm Innovation Center, Inc|Copyright (\\(c\\)|©) (20(1[2-9]|2[0-2])(-|,|\\s)*)+ The Linux Foundation",
+            "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
+          ],
+          "flags": "i"
+        }
+      }
+    }
+  }
+}
+```
