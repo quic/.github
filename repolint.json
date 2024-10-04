@@ -183,7 +183,7 @@
           "succeed-on-non-existent": true,
           "lineCount": 40,
           "patterns": [
-            "LICENSE ="
+            "LICENSE\\s*="
           ]
         }
       }
