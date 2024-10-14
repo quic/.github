@@ -151,7 +151,8 @@
             "**/*.java",
             "**/*.go",
             "**/*.bbclass",
-            "**/*.S"
+            "**/*.S",
+            "**/*.hpp"
           ],
           "skip-paths-matching": {
             "patterns": [
