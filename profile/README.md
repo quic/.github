@@ -6,5 +6,5 @@ Head over to Qualcomm Technologies GitHub page to learn more: [github.com/Qualco
 
 Explore our Systems on Chip, hardware and software development kits and tools at our website: [qualcomm.com/developer](https://www.qualcomm.com/developer)
 
-**Got technical questions?** Join our developer community at Discord: [discord.gg/qualcommdevelopernetwork](https://discord.gg/qualcommdevelopernetwork)
+Join our **Discord** community to directly engage with Qualcomm experts, connect with other developers working with Qualcomm technology, and stay updated on the latest developer-focused news and product demos: [discord.com/invite/QualcommDeveloperNetwork](https://discord.com/invite/qualcommdevelopernetwork)
 
