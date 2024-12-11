@@ -84,3 +84,51 @@ For example, if we wanted to exclude the copyright/license check for a directory
   }
 }
 ```
+
+# Creating a Whitelist for Copyright/License Check in Repolinter
+  * To include only specific directories (e.g., `/test1-data`, `/test2-data`) in the copyright/license check using Repolinter, follow these steps:
+
+For example, if we wanted to create a whiltelist the copyright/license check for list of directory (e.g. `/test1-data`, `/test2-data`) from Repolinter:
+
+1. Create the file `repolint.json` at the root of your project
+2. "Extend" the QuIC repolint.json file
+
+```json
+{
+  "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+  "rules": {}
+}
+```
+
+3. Copy the rule block you need to adjust from `https://raw.githubusercontent.com/quic/.github/main/repolint.json`. E.g. in this case we want to include only `/test1-data`, `/test2-data` from the license header check. So let's copy the json block `source-license-headers-exist` and paste it into the `rules` section of the local `repolint.json` we extended.
+4. Adjust the rule to include only the (e.g. `/test1-data`, `/test2-data`) directories.
+   
+* Your repolint.json should look like this:
+
+```json
+{
+  {
+  "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+  "rules": {
+    "source-license-headers-exist": {
+      "level": "error",
+      "rule": {
+        "type": "file-starts-with",
+        "options": {
+          "globsAll": [
+            "test1-data/**",
+            "test2-data/**"
+          ],
+          "lineCount": 60,
+          "patterns": [
+            "(Copyright|©).*Qualcomm Innovation Center, Inc|Copyright (\\(c\\)|©) (20(1[2-9]|2[0-2])(-|,|\\s)*)+ The Linux Foundation",
+            "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
+          ],
+          "flags": "i",
+          "succeed-on-non-existent": true
+        }
+      }
+    }
+  }
+}
+}
