@@ -85,10 +85,8 @@ For example, if we wanted to exclude the copyright/license check for a directory
 }
 ```
 
-# Creating a Whitelist for Copyright/License Check in Repolinter
-  * To include only specific directories (e.g., `/test1-data`, `/test2-data`) in the copyright/license check using Repolinter, follow these steps:
-
-For example, if we wanted to create a whiltelist the copyright/license check for list of directory (e.g. `/test1-data`, `/test2-data`) from Repolinter:
+### Creating a Whitelist for Copyright/License Check in Repolinter
+* To include only specific directories (e.g., `/test1-data`, `/test2-data`) in the copyright/license check using Repolinter, follow these steps:
 
 1. Create the file `repolint.json` at the root of your project
 2. "Extend" the QuIC repolint.json file
@@ -107,7 +105,6 @@ For example, if we wanted to create a whiltelist the copyright/license check for
 
 ```json
 {
-  {
   "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
   "rules": {
     "source-license-headers-exist": {
@@ -130,5 +127,4 @@ For example, if we wanted to create a whiltelist the copyright/license check for
       }
     }
   }
-}
 }
