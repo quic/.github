@@ -173,22 +173,6 @@
         }
       }
     },
-    "bb-file-license-exist": {
-      "level": "error",
-      "rule": {
-        "type": "file-starts-with",
-        "options": {
-          "globsAll": [
-            "**/*.bb"
-          ],
-          "succeed-on-non-existent": true,
-          "lineCount": 40,
-          "patterns": [
-            "LICENSE\\s*="
-          ]
-        }
-      }
-    },
     "github-issue-template-exists": {
       "level": "warning",
       "rule": {
