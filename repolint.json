@@ -166,7 +166,7 @@
           },
           "lineCount": 60,
           "patterns": [
-            "Copyright (\\(c\\)|©)?",
+            "Copyright(\\s)*(\\(c\\)|©)?",
             "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
           ],
           "flags": "i"
