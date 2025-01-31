@@ -1,0 +1,44 @@
+{
+    "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+    "rules": {
+        "qualcomm-source-license-headers-exist": {
+            "level": "error",
+            "rule": {
+              "type": "file-starts-with",
+              "options": {
+                "globsAll": [
+                  "**/*.py",
+                  "**/*.js",
+                  "**/*.c",
+                  "**/*.cc",
+                  "**/*.cpp",
+                  "**/*.h",
+                  "**/*.ts",
+                  "**/*.sh",
+                  "**/*.rs",
+                  "**/*.java",
+                  "**/*.go",
+                  "**/*.bbclass",
+                  "**/*.S",
+                  "**/*.hpp"
+                ],
+                "skip-paths-matching": {
+                  "patterns": [
+                    "babel.config.js",
+                    "build\/",
+                    "jest.config.js",
+                    "node_modules\/",
+                    "types\/",
+                    "uthash.h"
+                  ]
+                },
+                "lineCount": 60,
+                "patterns": [
+                  "(Copyright|©).*Qualcomm Innovation Center, Inc|Copyright (\\(c\\)|©) (20(1[2-9]|2[0-2])(-|,|\\s)*)+ The Linux Foundation"
+                ],
+                "flags": "i"
+              }
+            }
+          }        
+    }
+  }
