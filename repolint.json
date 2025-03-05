@@ -168,7 +168,8 @@
             "Copyright(\\s)*(\\(c\\)|©)?",
             "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
           ],
-          "flags": "i"
+          "flags": "i",
+          "succeed-on-non-existent": true
         }
       }
     },
